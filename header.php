@@ -30,8 +30,9 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet" />
+
   <?php wp_head(); ?>
-  <?php include "funcoesSalt.php";  ?>
 
 </head>
 
@@ -50,7 +51,63 @@
   </script>
 
   <header class="header">
-    <div>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+    <div class="header-contato">
+      <div class="container">
+        <div class="header-contato-info">
+          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">contato@draclaudiagalvao.com.br</a>
+          <a href="https://wa.me/+553198366840" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#whatsapp"></use>
+            </svg>
+            <span>(31) 98366-840</span>
+          </a>
+          <a href="tel:3125527788" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#tel"></use>
+            </svg>
+            <span>(31) 98366-840</span>
+          </a>
+        </div>
+
+        <div class="header-contato-search">
+          <button class="search-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-navigation">
+      <div class="container">
+        <a href="<?=site_url()?>">
+          <img src="<?=get_template_directory_URI()?>/img/src/logo_header.svg" alt="Logotipo Cláudia Galvão" />
+        </a>
+
+        <div class="menu-wrapper">
+          <nav class="menu">
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'MenuTopo', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+          </nav>
+
+          <div class="header-contato-midias">
+            <a href="https://instagram.com" target="_blank">
+              <img src="<?=get_template_directory_URI()?>/img/src/insta.svg" />
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+              <img src="<?=get_template_directory_URI()?>/img/src/face.svg" />
+            </a>
+
+            <a href="https://youtube.com" target="_blank">
+              <img src="<?=get_template_directory_URI()?>/img/src/youtube.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-hamb">
+          <span></span>
+        </div>
+      </div>
     </div>
   </header>

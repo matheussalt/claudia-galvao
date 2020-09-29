@@ -1,3 +1,12 @@
+$darkGold: #be9769;
+$gold: #e2bb8c;
+$lightGold: #f7eee4;
+$darkGrey: #606060;
+$grey: #a5a5a5;
+$lightGrey: #f0f0f0;
+$blue: #00ffd8;
+$green: #00ff6c;
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +23,12 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 @import './scss/header/header';
