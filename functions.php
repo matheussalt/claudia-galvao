@@ -17,6 +17,7 @@ add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
 
 // Habilitar menus
 add_theme_support('menus');
+add_theme_support( 'post-thumbnails' );
 
 function register_my_menus() {
   register_nav_menus(
@@ -64,4 +65,86 @@ add_filter('wpcf7_form_elements', function($content) {
 
     return $content;
 });
-?>
+	
+function has_children() {
+	global $post;
+
+	$children = get_pages( array( 'child_of' => $post->ID ) );
+	if( count( $children ) == 0 ) {
+			return false;
+	} else {
+			return true;
+	}
+}
+
+function catch_that_image($sizex) {
+  global $post, $posts;
+  $urldosite = get_site_url();
+  $first_img = "";
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  
+  if(empty($first_img)){ //Defines a default image
+  		if ( has_post_thumbnail() ) {
+			if($sizex == "1")
+			{
+				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'big');
+			}
+			else if ($sizex == "2")
+			{
+				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
+			} else if ($sizex == "3")
+			{
+				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
+			}
+			$first_img = $fotoPega[0];
+		} 
+		else if (!$output) 
+		{
+			$first_img = "";
+		} 
+		else
+		{
+			$first_img = $matches[1][0];
+		}
+		
+		if (!$first_img)
+		{
+ 			$first_img = "$urldosite/img/branco.png";
+		}
+  }
+  return $first_img;
+}
+
+if ( ! function_exists( 'twentythirteen_paging_nav' ) ) :
+/**
+* Display navigation to next/previous set of posts when applicable.
+*
+* @since Twenty Thirteen 1.0
+*/
+function twentythirteen_paging_nav() {
+global $wp_query;
+
+// Don't print empty markup if there's only one page.
+if ( $wp_query->max_num_pages < 2 ) return; ?>
+<nav class="navigation paging-navigation" role="navigation">
+  <h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
+  <div class="nav-links">
+
+    <?php if ( get_next_posts_link() ) : ?>
+    <div class="nav-previous">
+      <?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
+    <?php endif; ?>
+
+    <?php if ( get_previous_posts_link() ) : ?>
+    <div class="nav-next">
+      <?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
+    </div>
+    <?php endif; ?>
+
+  </div><!-- .nav-links -->
+</nav><!-- .navigation -->
+<?php
+}
+endif; ?>

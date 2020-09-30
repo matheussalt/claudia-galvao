@@ -55,17 +55,17 @@
       <div class="container">
         <div class="header-contato-info">
           <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">contato@draclaudiagalvao.com.br</a>
-          <a href="https://wa.me/+553198366840" target="_blank">
+          <a href="https://wa.me/+5531983668408" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#whatsapp"></use>
             </svg>
-            <span>(31) 98366-840</span>
+            <span>(31) 98366-8408</span>
           </a>
           <a href="tel:3125527788" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#tel"></use>
             </svg>
-            <span>(31) 98366-840</span>
+            <span>(31) 2552-7788</span>
           </a>
         </div>
 
