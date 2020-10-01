@@ -58,3 +58,31 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .servico-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+  }
+
+  .servicos-menu {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .content-btn {
+    display: flex;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 16px;
+
+      p {
+        margin: 0 0 16px;
+      }
+    }
+  }
+}

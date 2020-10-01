@@ -15,3 +15,19 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .home-agende {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+
+      h2 {
+        max-width: 360px;
+        margin-bottom: 0;
+        font-size: 28px;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -11,6 +11,8 @@
 }
 
 .cirurgias-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
   display: grid;
   gap: 16px;
 }
@@ -42,5 +44,20 @@
       font-size: 22px;
       text-align: center;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cirurgias {
+    padding: 128px 0;
+
+    .container > h2 {
+      margin-bottom: 64px;
+    }
+  }
+
+  .cirurgias-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 }

@@ -1,0 +1,85 @@
+.blog {
+  width: 100%;
+  padding: 64px 0;
+
+  .container {
+    > h2 {
+      margin-bottom: 32px;
+      color: $gold;
+      text-align: center;
+    }
+
+    > img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
+
+.blog-content {
+  width: 85%;
+  max-width: 768px;
+  margin: 32px auto 0;
+
+  .blog-title {
+    color: $gold;
+    text-align: center;
+  }
+
+  > * {
+    text-align: center;
+  }
+
+  .content-btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.dra-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  > div {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+
+    h3 {
+      color: $gold;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    h4 {
+      margin: 4px 0 8px;
+      color: $gold;
+      font-size: 10px;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    a {
+      margin-right: 8px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

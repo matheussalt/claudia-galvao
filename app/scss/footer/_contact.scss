@@ -66,4 +66,31 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-wrapper .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+
+  .footer-contact {
+    img {
+      justify-self: flex-start;
+    }
+  }
+
+  .footer-links {
+    display: grid;
+    align-self: flex-end;
+
+    .footer-links-midias {
+      margin-bottom: 32px;
+    }
+  }
+
+  .footer-form {
+    align-self: flex-end;
+  }
+}
+
 @import './form';

@@ -31,4 +31,14 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .ebook {
+    padding: 64px 0;
+
+    .container > h2 {
+      margin-bottom: 64px;
+    }
+  }
+}
+
 @import './form';

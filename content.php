@@ -14,12 +14,12 @@
 
 <section class="blog">
   <div class="container">
-    <h1>Blog</h1>
+    <h2>Blog</h2>
 
     <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
 
     <div class="blog-content">
-      <h2><?=the_title()?></h2>
+      <h2 class="blog-title"><?=the_title()?></h2>
 
       <?=the_content()?>
 

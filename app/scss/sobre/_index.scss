@@ -10,6 +10,15 @@
   }
 }
 
+.about-txt-yellow {
+  padding: 32px;
+  background-color: $lightGold;
+}
+
+.about-txt h2 {
+  color: $gold;
+}
+
 .about-img-2 {
   width: 100%;
   height: 300px;
@@ -40,5 +49,31 @@
   p {
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 128px 0;
+
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 64px;
+
+      .dra-about-img {
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .about-img-2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-ad p {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

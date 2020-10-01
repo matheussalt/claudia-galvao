@@ -47,7 +47,6 @@ get_header(); ?>
       <p>Sua atuação é focada na avaliação de pacientes com transtornos do sono. Realiza a propedêutica e avaliação de
         forma individualizada para indicação do tratamento clínico e cirúrgico dos casos de apneia.</p>
 
-      <a href="<?=site_url()?>/sobre" class="btn btn-gold">Saiba Mais</a>
     </div>
 
     <div class="about-txt-yellow">

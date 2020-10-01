@@ -21,3 +21,20 @@
     color: #fff;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .banner-sobre {
+    .container {
+      align-items: center;
+    }
+  }
+
+  .banner-sobre-txt {
+    width: 380px;
+    margin-top: 0;
+
+    h1 {
+      font-size: 38px;
+    }
+  }
+}

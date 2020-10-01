@@ -49,3 +49,20 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .home-exames {
+    padding: 128px 0;
+  }
+
+  .home-exames-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .exames-item {
+    width: 300px;
+  }
+}

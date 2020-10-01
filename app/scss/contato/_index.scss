@@ -18,9 +18,15 @@
     display: grid;
     gap: 16px;
 
-    .content-btn p {
-      margin: 8px 0;
-      color: $grey;
+    .content-btn {
+      p {
+        margin: 8px 0;
+        color: $grey;
+      }
+
+      a {
+        padding: 6px 25px;
+      }
     }
   }
 }
@@ -77,5 +83,12 @@
   iframe {
     width: 90%;
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contato-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 }
