@@ -10,7 +10,7 @@ get_header(); ?>
 
 <section class="cirurgias">
   <div class="container">
-    <h1>Cirurgias</h1>
+    <h2>Cirurgias</h2>
 
     <div class="cirurgias-wrapper">
       <?php
@@ -25,10 +25,10 @@ get_header(); ?>
 
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
       <a class="cirurgia-item" href="<?=the_permalink()?>">
-        <picture>
+        <div>
           <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
-        </picture>
-        <h2><?=the_title()?></h2>
+          <h2><?=the_title()?></h2>
+        </div>
       </a>
       <?php endwhile; ?>
     </div>

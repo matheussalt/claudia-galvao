@@ -15,7 +15,9 @@ get_header(); ?>
     <div class="contato-wrapper">
       <div class="contato-dados">
         <div class="contato-info">
-          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">contato@draclaudiagalvao.com.br</a>
+          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">
+            <span>contato@draclaudiagalvao.com.br</span>
+          </a>
           <a href="https://wa.me/+5531983668408" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#whatsapp"></use>

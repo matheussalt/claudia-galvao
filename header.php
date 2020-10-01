@@ -30,7 +30,8 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="<?=get_template_directory_URI()?>/style.css">
 
   <?php wp_head(); ?>
 
@@ -54,8 +55,10 @@
     <div class="header-contato">
       <div class="container">
         <div class="header-contato-info">
-          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">contato@draclaudiagalvao.com.br</a>
-          <a href="https://wa.me/+5531983668408" target="_blank">
+          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">
+            <span>contato@draclaudiagalvao.com.br</span>
+          </a>
+          <a href="https://wa.me/+5531983668408" class="show-mobile" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#whatsapp"></use>
             </svg>
@@ -81,11 +84,11 @@
 
     <div class="header-navigation">
       <div class="container">
-        <a href="<?=site_url()?>">
+        <a href="<?=site_url()?>" class="logo-header">
           <img src="<?=get_template_directory_URI()?>/img/src/logo_header.svg" alt="Logotipo Cláudia Galvão" />
         </a>
 
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" data-menu="menu">
           <nav class="menu">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu' => 'MenuTopo', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
           </nav>
@@ -105,7 +108,7 @@
           </div>
         </div>
 
-        <div class="menu-hamb">
+        <div class="menu-hamb" data-menu="button">
           <span></span>
         </div>
       </div>

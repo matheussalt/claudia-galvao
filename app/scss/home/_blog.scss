@@ -1,0 +1,16 @@
+.home-blog {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $lightGrey;
+
+  .container > h2 {
+    margin-bottom: 32px;
+    color: $gold;
+    text-align: center;
+  }
+}
+
+.blog-wrapper {
+  display: grid;
+  gap: 32px;
+}

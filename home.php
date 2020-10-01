@@ -43,7 +43,7 @@ get_header(); ?>
       <p>Você sabia que dormir bem reduz os riscos de desenvolver obesidade, hipertensão arterial e doenças cardíacas?
         Também contribui para uma maior produtividade no trabalho, para a redução dos níveis de estresse no dia a dia e
         oferece um estímulo maior ao raciocínio. Sono é qualidade de vida!</p>
-      <a href="<?=site_url()?>" class="btn">Saiba mais</a>
+      <a href="<?=site_url()?>/sobre" class="btn">Saiba mais</a>
     </div>
   </div>
 </section>
@@ -53,7 +53,7 @@ get_header(); ?>
     <div class="dream-test-wrapper">
       <img src="<?=get_template_directory_URI()?>/img/src/teste.svg" alt="Teste do sono" />
 
-      <div class="dream-teste-txt">
+      <div class="dream-test-txt">
         <h2>Teste do sono</h2>
         <p>Você ronca, sente sonolência durante o dia ou tem dificuldade para dormir? Faça agora o seu teste do sono e
           descubra se seu ronco pode ser apneia do sono ou se você tem hipersonolência diurna.</p>
@@ -66,9 +66,7 @@ get_header(); ?>
 <section class="home-about">
   <div class="container">
     <div class="dra-about-img">
-      <div>
-        <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia.jpg" alt="Dra. Cláudia Galvão" />
-      </div>
+      <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia.jpg" alt="Dra. Cláudia Galvão" />
     </div>
 
     <div class="home-about-txt">
@@ -110,13 +108,11 @@ get_header(); ?>
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
       <a class="exames-item" href="<?=the_permalink()?>">
         <div>
-          <picture>
-            <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
-          </picture>
+          <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
           <h2><?=the_title()?></h2>
         </div>
 
-        <p><?=custom_excerpt2(100)?></p>
+        <p><?=custom_excerpt2(160)?></p>
       </a>
       <?php endwhile; ?>
     </div>
@@ -125,7 +121,7 @@ get_header(); ?>
 
 <section class="cirurgias">
   <div class="container">
-    <h1>Cirurgias</h1>
+    <h2>Cirurgias</h2>
 
     <div class="cirurgias-wrapper">
       <?php
@@ -140,10 +136,10 @@ get_header(); ?>
 
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
       <a class="cirurgia-item" href="<?=the_permalink()?>">
-        <picture>
+        <div>
           <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
-        </picture>
-        <h2><?=the_title()?></h2>
+          <h2><?=the_title()?></h2>
+        </div>
       </a>
       <?php endwhile; ?>
     </div>
@@ -168,7 +164,7 @@ get_header(); ?>
         <h2>E-book</h2>
         <p>Neste material, você irá conhecer 15 hábitos importantes para ter uma boa qualidade de sono. Faça o download
           gratuito e coloque em prática estas dicas o quanto antes!</p>
-        <a href="<?=site_url()?>/ebook">Download</a>
+        <a href="<?=site_url()?>/e-book" class="btn btn-gold">Download</a>
       </div>
     </div>
   </div>

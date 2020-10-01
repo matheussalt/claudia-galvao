@@ -16,13 +16,16 @@
       <div class="footer-contact">
         <img src="<?=get_template_directory_URI()?>/img/src/logo_footer.svg" alt="Logotipo Cláudia Galvão" />
 
-        <a class="footer-endereco" href="https://goo.gl/maps/mwUxWp1kawft2qFS8" target="_blank">Rua da Bahia 2696 sala
-          701, Lourdes - Belo
-          Horizonte / MG
-          CEP: 30160-019</a>
+        <a class="footer-endereco" href="https://goo.gl/maps/mwUxWp1kawft2qFS8" target="_blank">
+          <span>Rua da Bahia 2696 sala 701, Lourdes - Belo
+            Horizonte / MG
+            CEP: 30160-019</span>
+        </a>
 
         <div class="footer-contact-info">
-          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">contato@draclaudiagalvao.com.br</a>
+          <a href="mailto:contato@draclaudiagalvao.com.br" target="_blank">
+            <span>contato@draclaudiagalvao.com.br</span>
+          </a>
           <a href="https://wa.me/+5531983668408" target="_blank">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <use xlink:href="#whatsapp"></use>
@@ -87,7 +90,7 @@
         <a href="https://agenciasalt.com.br" target="_blank">Agência Salt</a>
       </p>
 
-      <a href="https://agenciasalt.com.br" target="_blank">
+      <a href="https://agenciasalt.com.br" class="salt" target="_blank">
         <img src="<?=get_template_directory_URI()?>/img/src/salt.png" alt="Agência Salt" />
       </a>
     </div>

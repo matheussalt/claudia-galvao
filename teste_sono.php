@@ -13,7 +13,7 @@ get_header(); ?>
     <div class="teste-title">
       <img src="<?=get_template_directory_URI()?>/img/src/teste.svg" alt="Teste do sono" />
 
-      <h1>Teste do sono</h1>
+      <h2>Teste do sono</h2>
     </div>
 
     <? echo do_shortcode('[contact-form-7 id="36" title="Teste do sono"]'); ?>

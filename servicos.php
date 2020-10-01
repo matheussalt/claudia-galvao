@@ -36,21 +36,19 @@ $featuredMedia = get_the_post_thumbnail_url($post->post_parent, 'big');
 
     <div class="servico-wrapper">
       <aside class="servicos-menu">
-        <div class="dermatologia-links">
-          <?php $mypages = get_pages( array( 'child_of' => $pai, 'sort_order' => 'asc' ) ); 
+        <?php $mypages = get_pages( array( 'child_of' => $pai, 'sort_order' => 'asc' ) ); 
         foreach( $mypages as $page ) { ?>
-          <a href="<?php echo get_page_link( $page->ID ); ?>" class="<? if (get_the_ID() == $page->ID) { echo "
-            active";}?>">
-            <?php echo $page->post_title; ?>
-          </a>
-          <? } ?>
-        </div>
+        <a href="<?php echo get_page_link( $page->ID ); ?>" class="<? if (get_the_ID() == $page->ID) { echo "
+          active";}?>">
+          <span><?php echo $page->post_title; ?></span>
+        </a>
+        <? } ?>
       </aside>
 
-      <div class="dermatologia-content">
+      <div class="servicos-content">
         <?php /* The loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
-        <img class="dermatologia-img-destaque" src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
+        <img class="servico-img-destaque" src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
         <h2><?=the_title()?></h2>
         <?=the_content()?>
         <?php endwhile; ?>

@@ -1,0 +1,39 @@
+.footer-form {
+  width: 100%;
+
+  p {
+    color: #fff;
+  }
+
+  form {
+    display: grid;
+    gap: 8px;
+    width: 100%;
+
+    input,
+    textarea {
+      padding: 8px 16px;
+      border-radius: 16px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type='submit'] {
+      width: auto;
+      padding: 8px 32px;
+      justify-self: flex-end;
+      background-color: $gold;
+      border: 2px solid $gold;
+      color: #fff;
+    }
+  }
+}

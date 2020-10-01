@@ -1,0 +1,44 @@
+@import './banner';
+
+.about {
+  width: 100%;
+  padding: 64px 0;
+
+  .container {
+    display: grid;
+    gap: 32px;
+  }
+}
+
+.about-img-2 {
+  width: 100%;
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-ad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+    color: $gold;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

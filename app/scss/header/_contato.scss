@@ -1,0 +1,48 @@
+.header-contato {
+  width: 100%;
+  padding: 8px 0;
+  background-color: $darkGold;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-contato-info {
+  a {
+    padding: 8px 8px 8px 0;
+    display: flex;
+    align-items: center;
+
+    &:not(.show-mobile) {
+      display: none;
+    }
+
+    span {
+      color: #fff;
+      font-size: 12px;
+    }
+
+    svg {
+      margin-right: 6px;
+      width: 12px;
+      height: 12px;
+      fill: #fff;
+    }
+  }
+}
+
+.header-contato-search {
+  button {
+    background-color: transparent;
+    border: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: #fff;
+    }
+  }
+}

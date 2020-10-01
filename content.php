@@ -66,7 +66,7 @@
 <a class="blog-card" href="<?=the_permalink()?>">
   <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
   <h3><?=the_title()?></h3>
-  <p><?=custom_excerpt2(100)?></p>
+  <p><?=custom_excerpt2(140)?></p>
 </a>
 
 <? } ?>

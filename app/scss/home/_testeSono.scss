@@ -1,0 +1,33 @@
+.dream-test {
+  width: 100%;
+  padding: 32px 0;
+  background-color: #848587;
+}
+
+.dream-test-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 140px;
+  }
+
+  .dream-test-txt {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: #fff;
+      text-align: center;
+    }
+
+    p {
+      margin: 16px 0 32px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}

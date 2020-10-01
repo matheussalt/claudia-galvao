@@ -4,6 +4,7 @@ $lightGold: #f7eee4;
 $darkGrey: #606060;
 $grey: #a5a5a5;
 $lightGrey: #f0f0f0;
+$black: #3b3b3b;
 $blue: #00ffd8;
 $green: #00ff6c;
 
@@ -13,6 +14,15 @@ $green: #00ff6c;
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+}
+
+*,
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+body {
+  font-size: 16px;
 }
 
 ul,
@@ -25,12 +35,95 @@ a {
   text-decoration: none;
 }
 
+p,
+li,
+ol {
+  color: $black;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 34px;
+}
+
 .container {
   width: 90%;
   max-width: 1050px;
   margin: 0 auto;
 }
 
+.btn {
+  padding: 6px 42px;
+  display: inline-block;
+  border-radius: 32px;
+  border: 2px solid;
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s background-color;
+
+  &:hover {
+    background-color: #fff;
+    color: $black;
+  }
+
+  &.btn-blue {
+    background-color: $blue;
+    color: $black;
+    border-color: transparent;
+  }
+
+  &.btn-green {
+    background-color: $green;
+    color: $black;
+    border-color: transparent;
+  }
+
+  &.btn-gold {
+    background-color: $gold;
+    border-color: $gold;
+    color: #fff;
+
+    &:hover {
+      color: $gold;
+      background-color: #fff;
+    }
+  }
+
+  &.btn-white {
+    background-color: #fff;
+    color: $gold;
+
+    &:hover {
+      color: #fff;
+      background-color: $gold;
+    }
+  }
+}
+
 @import './scss/header/header';
+@import './scss/home';
+@import './scss/sobre';
+@import './scss/servicos';
+@import './scss/blog';
+@import './scss/testeSono';
+@import './scss/ebook';
+@import './scss/contato';
 @import './scss/footer/footer';
 @import './animation';

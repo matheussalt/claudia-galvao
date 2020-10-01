@@ -29,9 +29,7 @@ get_header(); ?>
 <section class="about">
   <div class="container">
     <div class="dra-about-img">
-      <div>
-        <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia.jpg" alt="Dra. Cláudia Galvão" />
-      </div>
+      <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia.jpg" alt="Dra. Cláudia Galvão" />
     </div>
 
     <div class="about-txt">
@@ -73,11 +71,13 @@ get_header(); ?>
     <a href="<?=site_url()?>/blog" class="about-ad">
       <h2>Publicações científicas</h2>
       <img src="<?=get_template_directory_URI()?>/img/src/publicacoes.jpg" alt="Publicações Científicas" />
+      <p>Conheça quais foram as publicações científicas escritas por Dra. Cláudia Galvão</p>
     </a>
 
     <a href="<?=site_url()?>/blog" class="about-ad">
-      <h2>Entrevistas/imprensa</h2>
+      <h2>Entrevistas / imprensa</h2>
       <img src="<?=get_template_directory_URI()?>/img/src/entrevistas.jpg" alt="Entrevistas/imprensa" />
+      <p>Adenoamigdalectomia não elimina problemas respiratórios do sono em crianças com respiração oral</p>
     </a>
   </div>
 </section>
