@@ -87,12 +87,20 @@ h2 {
     background-color: $blue;
     color: $black;
     border-color: transparent;
+
+    &:hover {
+      background-color: #03c4a7;
+    }
   }
 
   &.btn-green {
     background-color: $green;
     color: $black;
     border-color: transparent;
+
+    &:hover {
+      background-color: #05c455;
+    }
   }
 
   &.btn-gold {

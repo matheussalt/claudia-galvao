@@ -10,18 +10,26 @@
   }
 
   .wpcf7-list-item {
+    position: relative;
     margin: 16px 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     .my-checkbox {
+      position: absolute;
+      top: 50%;
+      left: 0;
       width: 32px;
       height: 32px;
       margin-right: 12px;
       background-color: #fff;
       border: 3px solid $gold;
+      transform: translate3d(0, -50%, 0);
+      user-select: none;
+      pointer-events: none;
     }
 
     &.ativo .my-checkbox {
@@ -34,8 +42,10 @@
     }
 
     label {
+      width: 100%;
+      padding-left: 48px;
       color: #fff;
-      width: 70%;
+      cursor: pointer;
     }
   }
 

@@ -46,3 +46,17 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .header-contato-info {
+    display: flex;
+
+    a {
+      margin-right: 16px;
+
+      &:not(.show-mobile) {
+        display: flex;
+      }
+    }
+  }
+}

@@ -108,3 +108,44 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .menu-hamb {
+    display: none;
+  }
+
+  .logo-header img {
+    width: 250px;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+
+    .menu ul {
+      margin-right: 32px;
+      display: flex;
+
+      a {
+        color: $gold;
+        display: block;
+        padding: 8px;
+
+        &:hover {
+          color: $darkGold;
+        }
+      }
+    }
+
+    .header-contato-midias {
+      a {
+        margin-right: 8px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

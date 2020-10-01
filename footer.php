@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <?php if (!is_page(59)) { ?>
+  <?php if (!is_page(15)) { ?>
 
   <div class="footer-maps">
     <iframe

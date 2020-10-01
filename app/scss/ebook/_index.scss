@@ -2,6 +2,7 @@
   width: 100%;
   padding: 64px 0;
   background-color: #fff;
+  border-top: 2px solid $gold;
 
   .container {
     > h2 {
@@ -21,6 +22,7 @@
         margin-bottom: 16px;
         color: $gold;
         font-size: 26px;
+        font-weight: bold;
       }
 
       h4 {
@@ -35,8 +37,24 @@
   .ebook {
     padding: 64px 0;
 
-    .container > h2 {
-      margin-bottom: 64px;
+    .container {
+      > h2 {
+        margin-bottom: 64px;
+      }
+
+      .ebook-wrapper img {
+        width: 320px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ebook .container .ebook-wrapper {
+    align-items: center;
+
+    img {
+      width: 400px;
     }
   }
 }

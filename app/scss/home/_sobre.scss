@@ -44,6 +44,7 @@
 
 .home-about-txt {
   flex: 1;
+  max-width: 460px;
 
   h2 {
     margin-bottom: 8px;
@@ -53,6 +54,12 @@
   .btn {
     margin-top: 32px;
   }
+
+  p,
+  li {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -61,11 +68,18 @@
 
     .container {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 
   .dra-about-img {
     margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .dra-about-img::before {
+    left: -10%;
+    width: 70%;
   }
 }

@@ -82,3 +82,31 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .banner-txt {
+    margin-bottom: 64px;
+    max-width: 560px;
+
+    h1 {
+      font-size: 42px;
+      text-shadow: none;
+      margin-bottom: 16px;
+    }
+
+    p {
+      max-width: 440px;
+      text-shadow: none;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .banner-btn {
+    display: flex;
+
+    div {
+      margin-left: 16px;
+    }
+  }
+}

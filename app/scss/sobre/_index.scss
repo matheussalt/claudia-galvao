@@ -15,8 +15,20 @@
   background-color: $lightGold;
 }
 
-.about-txt h2 {
-  color: $gold;
+.about-txt {
+  h2,
+  h3 {
+    color: $gold;
+  }
+
+  h2 {
+    max-width: 300px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
 
 .about-img-2 {
@@ -75,5 +87,20 @@
   .about-ad p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .about .container .dra-about-img {
+    margin: 0;
+  }
+
+  .about-txt,
+  .about-txt-yellow {
+    p,
+    li {
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
 }

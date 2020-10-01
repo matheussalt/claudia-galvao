@@ -64,10 +64,14 @@ h2 {
     background-color: #00ffd8;
     color: #3b3b3b;
     border-color: transparent; }
+    .btn.btn-blue:hover {
+      background-color: #03c4a7; }
   .btn.btn-green {
     background-color: #00ff6c;
     color: #3b3b3b;
     border-color: transparent; }
+    .btn.btn-green:hover {
+      background-color: #05c455; }
   .btn.btn-gold {
     background-color: #e2bb8c;
     border-color: #e2bb8c;
@@ -120,6 +124,14 @@ h2 {
     width: 16px;
     height: 16px;
     fill: #fff; }
+
+@media screen and (min-width: 1050px) {
+  .header-contato-info {
+    display: flex; }
+    .header-contato-info a {
+      margin-right: 16px; }
+      .header-contato-info a:not(.show-mobile) {
+        display: flex; } }
 
 .header-navigation {
   background-color: #fff;
@@ -197,6 +209,29 @@ h2 {
           width: 20px;
           height: 20px; } }
 
+@media screen and (min-width: 1050px) {
+  .menu-hamb {
+    display: none; }
+  .logo-header img {
+    width: 250px; }
+  .menu-wrapper {
+    display: flex;
+    align-items: center; }
+    .menu-wrapper .menu ul {
+      margin-right: 32px;
+      display: flex; }
+      .menu-wrapper .menu ul a {
+        color: #e2bb8c;
+        display: block;
+        padding: 8px; }
+        .menu-wrapper .menu ul a:hover {
+          color: #be9769; }
+    .menu-wrapper .header-contato-midias a {
+      margin-right: 8px; }
+      .menu-wrapper .header-contato-midias a img {
+        width: 20px;
+        height: 20px; } }
+
 .banner {
   width: 100%;
   height: 600px;
@@ -257,6 +292,24 @@ h2 {
     .banner-btn div {
       margin-left: 16px; } }
 
+@media screen and (min-width: 1050px) {
+  .banner-txt {
+    margin-bottom: 64px;
+    max-width: 560px; }
+    .banner-txt h1 {
+      font-size: 42px;
+      text-shadow: none;
+      margin-bottom: 16px; }
+    .banner-txt p {
+      max-width: 440px;
+      text-shadow: none;
+      font-size: 18px;
+      line-height: 27px; }
+  .banner-btn {
+    display: flex; }
+    .banner-btn div {
+      margin-left: 16px; } }
+
 .dream-test {
   width: 100%;
   padding: 32px 0;
@@ -298,6 +351,14 @@ h2 {
       .dream-test-wrapper .dream-test-txt h2 {
         text-align: left; } }
 
+@media screen and (min-width: 768px) {
+  .dream-test-wrapper img {
+    width: 200px;
+    margin-right: 64px; }
+  .dream-test-wrapper .dream-test-txt p {
+    font-size: 14px;
+    line-height: 21px; } }
+
 .home-about {
   width: 100%;
   padding: 64px 0;
@@ -333,21 +394,31 @@ h2 {
     z-index: 1; }
 
 .home-about-txt {
-  flex: 1; }
+  flex: 1;
+  max-width: 460px; }
   .home-about-txt h2 {
     margin-bottom: 8px;
     color: #e2bb8c; }
   .home-about-txt .btn {
     margin-top: 32px; }
+  .home-about-txt p,
+  .home-about-txt li {
+    font-size: 14px;
+    line-height: 21px; }
 
 @media screen and (min-width: 768px) {
   .home-about {
     padding: 128px 0; }
     .home-about .container {
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: center; }
   .dra-about-img {
     margin-right: 32px; } }
+
+@media screen and (min-width: 1050px) {
+  .dra-about-img::before {
+    left: -10%;
+    width: 70%; } }
 
 .parallax {
   width: 100%;
@@ -359,6 +430,10 @@ h2 {
 @media screen and (min-width: 768px) {
   .parallax {
     height: 340px; } }
+
+@media screen and (min-width: 1050px) {
+  .parallax {
+    height: 420px; } }
 
 .home-exames {
   width: 100%;
@@ -373,7 +448,11 @@ h2 {
   gap: 16px; }
 
 .exames-item {
-  width: 100%; }
+  width: 100%;
+  background-color: #fff;
+  transition: 0.3s box-shadow ease-out; }
+  .exames-item:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); }
   .exames-item > div {
     position: relative;
     width: 100%;
@@ -396,6 +475,7 @@ h2 {
       text-align: center; }
   .exames-item p {
     margin-top: 16px;
+    padding: 0 16px 16px;
     font-size: 14px;
     text-align: center; }
 
@@ -426,7 +506,10 @@ h2 {
   gap: 16px; }
 
 .cirurgia-item {
-  width: 100%; }
+  width: 100%;
+  transition: 0.3s box-shadow ease-out; }
+  .cirurgia-item:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
   .cirurgia-item > div {
     position: relative;
     width: 100%;
@@ -506,6 +589,10 @@ h2 {
     .ebook-wrapper .ebook-txt {
       max-width: 360px; } }
 
+@media screen and (min-width: 1050px) {
+  .ebook-wrapper img {
+    width: 300px; } }
+
 .home-blog {
   width: 100%;
   padding: 64px 0;
@@ -565,8 +652,16 @@ h2 {
   padding: 32px;
   background-color: #f7eee4; }
 
-.about-txt h2 {
+.about-txt h2,
+.about-txt h3 {
   color: #e2bb8c; }
+
+.about-txt h2 {
+  max-width: 300px; }
+
+.about-txt h3 {
+  font-weight: 600;
+  font-size: 16px; }
 
 .about-img-2 {
   width: 100%;
@@ -606,6 +701,16 @@ h2 {
   .about-ad p {
     font-size: 16px;
     line-height: 24px; } }
+
+@media screen and (min-width: 1050px) {
+  .about .container .dra-about-img {
+    margin: 0; }
+  .about-txt p,
+  .about-txt li,
+  .about-txt-yellow p,
+  .about-txt-yellow li {
+    font-size: 14px;
+    line-height: 21px; } }
 
 .banner-servicos {
   width: 100%;
@@ -692,7 +797,8 @@ h2 {
 
 .blog {
   width: 100%;
-  padding: 64px 0; }
+  padding: 64px 0;
+  border-top: 2px solid #e2bb8c; }
   .blog .container > h2 {
     margin-bottom: 32px;
     color: #e2bb8c;
@@ -760,6 +866,8 @@ h2 {
 
 .teste-title {
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -787,25 +895,35 @@ h2 {
     color: #e2bb8c;
     text-align: center; }
   .teste form .wpcf7-list-item {
+    position: relative;
     margin: 16px 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
     .teste form .wpcf7-list-item .my-checkbox {
+      position: absolute;
+      top: 50%;
+      left: 0;
       width: 32px;
       height: 32px;
       margin-right: 12px;
       background-color: #fff;
-      border: 3px solid #e2bb8c; }
+      border: 3px solid #e2bb8c;
+      transform: translate3d(0, -50%, 0);
+      user-select: none;
+      pointer-events: none; }
     .teste form .wpcf7-list-item.ativo .my-checkbox {
       background-color: #e2bb8c;
       border-color: #fff; }
     .teste form .wpcf7-list-item input {
       display: none; }
     .teste form .wpcf7-list-item label {
+      width: 100%;
+      padding-left: 48px;
       color: #fff;
-      width: 70%; }
+      cursor: pointer; }
   .teste form input[type='email'],
   .teste form input[type='submit'] {
     width: 100%;
@@ -827,7 +945,8 @@ h2 {
 .ebook {
   width: 100%;
   padding: 64px 0;
-  background-color: #fff; }
+  background-color: #fff;
+  border-top: 2px solid #e2bb8c; }
   .ebook .container > h2 {
     color: #e2bb8c;
     text-align: center; }
@@ -839,7 +958,8 @@ h2 {
     .ebook .container .ebook-wrapper h3 {
       margin-bottom: 16px;
       color: #e2bb8c;
-      font-size: 26px; }
+      font-size: 26px;
+      font-weight: bold; }
     .ebook .container .ebook-wrapper h4 {
       max-width: 260px;
       font-size: 18px; }
@@ -848,7 +968,15 @@ h2 {
   .ebook {
     padding: 64px 0; }
     .ebook .container > h2 {
-      margin-bottom: 64px; } }
+      margin-bottom: 64px; }
+    .ebook .container .ebook-wrapper img {
+      width: 320px; } }
+
+@media screen and (min-width: 768px) {
+  .ebook .container .ebook-wrapper {
+    align-items: center; }
+    .ebook .container .ebook-wrapper img {
+      width: 400px; } }
 
 .ebook-form {
   width: 100%;
@@ -877,12 +1005,14 @@ h2 {
       justify-self: center;
       background-color: #e2bb8c;
       border: 2px solid #e2bb8c;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
 
 .contato {
   width: 100%;
   padding: 64px 0;
-  background-color: #fff; }
+  background-color: #fff;
+  border-top: 2px solid #e2bb8c; }
   .contato .container > h2 {
     margin-bottom: 32px;
     text-align: center;
@@ -918,7 +1048,8 @@ h2 {
       fill: #606060; }
 
 .contato-endereco {
-  color: #606060; }
+  color: #606060;
+  max-width: 300px; }
 
 .contato-midia a {
   margin-right: 8px; }
@@ -945,6 +1076,12 @@ h2 {
   .contato-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px; } }
+
+@media screen and (min-width: 1050px) {
+  .contato-info {
+    gap: 12px; }
+  .contato .container > h2 {
+    margin-bottom: 64px; } }
 
 .footer {
   width: 100%; }
@@ -1007,6 +1144,8 @@ h2 {
     align-self: flex-end; }
     .footer-links .footer-links-midias {
       margin-bottom: 32px; }
+    .footer-links .btn {
+      justify-self: flex-start; }
   .footer-form {
     align-self: flex-end; } }
 
@@ -1036,7 +1175,8 @@ h2 {
       justify-self: flex-end;
       background-color: #e2bb8c;
       border: 2px solid #e2bb8c;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
 
 .footer-maps {
   width: 100%;
@@ -1059,6 +1199,8 @@ h2 {
         color: #3b3b3b; }
     .rodape .container .salt {
       display: inline-block; }
+      .rodape .container .salt img {
+        width: 80px; }
 
 @media screen and (min-width: 768px) {
   .rodape .container {
