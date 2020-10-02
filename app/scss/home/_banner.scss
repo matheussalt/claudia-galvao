@@ -18,6 +18,14 @@
   position: absolute;
   top: 16px;
   right: 0;
+  transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  transition: 1.5s transform, 1.5s opacity;
+
+  &.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 
   div {
     display: flex;
@@ -34,6 +42,14 @@
 
 .banner-txt {
   margin-bottom: 32px;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+  transition: 1.5s transform, 1.5s opacity;
+
+  &.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 
   h1 {
     color: #fff;

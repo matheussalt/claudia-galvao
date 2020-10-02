@@ -4,5 +4,6 @@ import menu from './js/menu';
 import formTeste from './js/formTeste';
 import './js/modernizr';
 
+animacoes();
 menu();
 formTeste();

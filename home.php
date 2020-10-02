@@ -26,7 +26,7 @@ get_header(); ?>
 
 <section class="banner">
   <div class="container">
-    <div class="banner-btn">
+    <div class="banner-btn" data-animar>
       <div class="banner-btn-call">
         <p>Agendar Consulta</p>
         <a href="tel:3125527788" target="_blank" class="btn btn-blue">Ligar Agora</a>
@@ -38,7 +38,7 @@ get_header(); ?>
       </div>
     </div>
 
-    <div class="banner-txt">
+    <div class="banner-txt" data-animar>
       <h1>Diagnóstico e tratamento dos distúrbios do sono</h1>
       <p>Você sabia que dormir bem reduz os riscos de desenvolver obesidade, hipertensão arterial e doenças cardíacas?
         Também contribui para uma maior produtividade no trabalho, para a redução dos níveis de estresse no dia a dia e
@@ -51,9 +51,9 @@ get_header(); ?>
 <section class="dream-test">
   <div class="container">
     <div class="dream-test-wrapper">
-      <img src="<?=get_template_directory_URI()?>/img/src/teste.svg" alt="Teste do sono" />
+      <img src="<?=get_template_directory_URI()?>/img/src/teste.svg" class="fadeUp" data-animar alt="Teste do sono" />
 
-      <div class="dream-test-txt">
+      <div class="dream-test-txt fadeLeft" data-animar>
         <h2>Teste do sono</h2>
         <p>Você ronca, sente sonolência durante o dia ou tem dificuldade para dormir? Faça agora o seu teste do sono e
           descubra se seu ronco pode ser apneia do sono ou se você tem hipersonolência diurna.</p>
@@ -65,11 +65,11 @@ get_header(); ?>
 
 <section class="home-about">
   <div class="container">
-    <div class="dra-about-img">
+    <div class="dra-about-img fadeRight" data-animar>
       <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia.jpg" alt="Dra. Cláudia Galvão" />
     </div>
 
-    <div class="home-about-txt">
+    <div class="home-about-txt fadeUp" data-animar>
       <h2>Dra. Cláudia Galvão</h2>
       <p>Claudia Galvão é doutora pela UFMG e especialista em Medicina do Sono, com certificação pela Academia
         Brasileira de Medicina e pela Associação Brasileira de Medicina do Sono.
@@ -106,7 +106,7 @@ get_header(); ?>
       ?>
 
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
-      <a class="exames-item" href="<?=the_permalink()?>">
+      <a class="exames-item fadeUp" href="<?=the_permalink()?>" data-animar>
         <div>
           <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
           <h2><?=the_title()?></h2>
@@ -135,7 +135,7 @@ get_header(); ?>
       ?>
 
       <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
-      <a class="cirurgia-item" href="<?=the_permalink()?>">
+      <a class="cirurgia-item fadeUp" data-animar href="<?=the_permalink()?>">
         <div>
           <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
           <h2><?=the_title()?></h2>

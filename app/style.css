@@ -91,7 +91,13 @@ h2 {
     font-size: 40px; } }
 
 .header {
-  width: 100%; }
+  width: 100%;
+  transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  transition: 1.5s transform, 1.5s opacity; }
+  .header.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
 
 .header-contato {
   width: 100%;
@@ -248,7 +254,13 @@ h2 {
 .banner-btn {
   position: absolute;
   top: 16px;
-  right: 0; }
+  right: 0;
+  transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  transition: 1.5s transform, 1.5s opacity; }
+  .banner-btn.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
   .banner-btn div {
     display: flex;
     flex-direction: column;
@@ -259,7 +271,13 @@ h2 {
       font-size: 13px; }
 
 .banner-txt {
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+  transition: 1.5s transform, 1.5s opacity; }
+  .banner-txt.animar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
   .banner-txt h1 {
     color: #fff;
     font-size: 36px;
@@ -1208,6 +1226,30 @@ h2 {
     justify-content: space-between; }
     .rodape .container p {
       text-align: left; } }
+
+.fadeUp {
+  transform: translate3d(0, 30px, 0);
+  opacity: 0; }
+  .fadeUp.animar {
+    animation: reset 1s ease-out forwards; }
+
+.fadeDown {
+  transform: translate3d(0, -30px, 0);
+  opacity: 0; }
+  .fadeDown.animar {
+    animation: reset 1s ease-out forwards; }
+
+.fadeLeft {
+  transform: translate3d(30px, 0, 0);
+  opacity: 0; }
+  .fadeLeft.animar {
+    animation: reset 1s ease-out forwards; }
+
+.fadeRight {
+  transform: translate3d(-30px, 0, 0);
+  opacity: 0; }
+  .fadeRight.animar {
+    animation: reset 1s ease-out forwards; }
 
 @keyframes reset {
   to {

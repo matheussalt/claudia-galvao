@@ -51,7 +51,7 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <header class="header">
+  <header class="header" data-animar>
     <div class="header-contato">
       <div class="container">
         <div class="header-contato-info">

@@ -16,7 +16,7 @@ get_header(); ?>
 
 <section class="banner-sobre">
   <div class="container">
-    <div class="banner-sobre-txt">
+    <div class="banner-sobre-txt fadeUp" data-animar>
       <h1>Juntos pela qualidade do seu sono</h1>
 
       <p>Prezar pela qualidade do sono trará ganhos significativos para o seu dia a dia. Nesse sentido, a Dra. Cláudia
@@ -28,11 +28,11 @@ get_header(); ?>
 
 <section class="about">
   <div class="container">
-    <div class="dra-about-img">
+    <div class="dra-about-img fadeRight" data-animar>
       <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia.jpg" alt="Dra. Cláudia Galvão" />
     </div>
 
-    <div class="about-txt">
+    <div class="about-txt fadeUp" data-animar>
       <h2>Dra. Cláudia Galvão</h2>
       <h3>Medicina do Sono | Otorrinolaringologia </h3>
       <p>Claudia Galvão é otorrinolaringologista, formada pela UFMG e especialista em Medicina do Sono, com certificação
@@ -49,7 +49,7 @@ get_header(); ?>
 
     </div>
 
-    <div class="about-txt-yellow">
+    <div class="about-txt-yellow fadeUp" data-animar>
       <p>Dra. Claudia Galvão possui formações complementares, como:</p>
 
       <ul>
@@ -63,17 +63,17 @@ get_header(); ?>
         Otorrinolaringologia em Belo Horizonte.</p>
     </div>
 
-    <div class="about-img-2">
+    <div class="about-img-2 fadeLeft" data-animar>
       <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia2.jpg" alt="Dra. Cláudia Galvão" />
     </div>
 
-    <a href="<?=site_url()?>/blog" class="about-ad">
+    <a href="<?=site_url()?>/blog" class="about-ad fadeUp" data-animar>
       <h2>Publicações científicas</h2>
       <img src="<?=get_template_directory_URI()?>/img/src/publicacoes.jpg" alt="Publicações Científicas" />
       <p>Conheça quais foram as publicações científicas escritas por Dra. Cláudia Galvão</p>
     </a>
 
-    <a href="<?=site_url()?>/blog" class="about-ad">
+    <a href="<?=site_url()?>/blog" class="about-ad fadeUp" data-animar>
       <h2>Entrevistas / imprensa</h2>
       <img src="<?=get_template_directory_URI()?>/img/src/entrevistas.jpg" alt="Entrevistas/imprensa" />
       <p>Adenoamigdalectomia não elimina problemas respiratórios do sono em crianças com respiração oral</p>
