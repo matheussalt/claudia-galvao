@@ -35,9 +35,13 @@
 }
 
 .header-contato-search {
+  position: relative;
+
   button {
+    padding: 6px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 
     svg {
       width: 16px;
@@ -46,6 +50,8 @@
     }
   }
 }
+
+@import './search';
 
 @media screen and (min-width: 1050px) {
   .header-contato-info {

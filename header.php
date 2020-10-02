@@ -78,6 +78,12 @@
               <use xlink:href="#search"></use>
             </svg>
           </button>
+
+          <div class="search-header">
+            <form action="<?=site_url()?>" method="get">
+              <input type="search" name="s" placeholder="Pesquisar..." value="<?php the_search_query(); ?>" />
+            </form>
+          </div>
         </div>
       </div>
     </div>

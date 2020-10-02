@@ -11,20 +11,32 @@
 
 get_header(); ?>
 
-		<?php if ( have_posts() ) : ?>
-			<h1><?php printf( __( 'Arquivos da categoria: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h1>
+<section class="home-blog">
+  <div class="container">
+    <?php if ( have_posts() ) : ?>
+    <h2><?php printf( __( 'Categoria: %s', 'twentythirteen' ), single_cat_title( '', false ) ); ?></h2>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+    <div class="blog-wrapper">
 
-			<div class="paginas">
-				<?php if(function_exists('wp_paginate')) { wp_paginate(); } else { twentythirteen_paging_nav(); } ?>                 
-            </div> 
+      <?php /* The loop */ ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part( 'content', get_post_format() ); ?>
+      <?php endwhile; ?>
+    </div>
 
-		<?php else : ?>
-			Nada encontrado nessa categoria...
-		<?php endif; ?>
-        
+    <!--Paginacao -->
+    <div class="paginas">
+      <?php if(function_exists('wp_paginate')) { wp_paginate(); }
+        else { twentythirteen_paging_nav(); } ?>
+    </div>
+  </div>
+</section>
+
+<?php else : ?>
+<section>
+  <div class="container">
+    <h2>Nada foi encontrado...</h2>
+  </div>
+</section>
+
 <?php get_footer(); ?>
