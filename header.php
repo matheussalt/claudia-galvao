@@ -100,16 +100,12 @@
           </nav>
 
           <div class="header-contato-midias">
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com/draclaudiagalvao/" target="_blank">
               <img src="<?=get_template_directory_URI()?>/img/src/insta.svg" />
             </a>
 
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com/claudiapenagalvao.anjos" target="_blank">
               <img src="<?=get_template_directory_URI()?>/img/src/face.svg" />
-            </a>
-
-            <a href="https://youtube.com" target="_blank">
-              <img src="<?=get_template_directory_URI()?>/img/src/youtube.svg" />
             </a>
           </div>
         </div>
