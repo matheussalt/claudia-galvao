@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: sonolencia diurna
+ * Template Name: quiz
  *
  * @package WordPress
  * @subpackage agenciaSalt
@@ -8,9 +8,11 @@
  */
 get_header(); ?>
 
+<?php $shortcode = get_field('shortcode'); ?>
+
 <section class="quiz">
   <div class="container">
-    <? echo do_shortcode('[qsm quiz=1]'); ?>
+    <? echo do_shortcode($shortcode); ?>
   </div>
 </section>
 
