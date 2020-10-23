@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="<?=get_template_directory_URI()?>/style.css">
 
   <script>
-    var baseURL = <?=site_url()?>;
+    var baseURL = "<?=site_url()?>";
   </script>
 
   <?php wp_head(); ?>
