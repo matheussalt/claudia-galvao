@@ -20,4 +20,16 @@ get_header(); ?>
   </div>
 </section>
 
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  if (event.detail.inputs[0].value === "Sinto muito sono durante o dia") {
+    window.location.href = `${baseURL}/voce-tem-sonolencia-diurna/`;
+  }
+  
+  if (event.detail.inputs[0].value === "Ronco a noite e às vezes engasgo durante o sono") {
+    window.location.href = `${baseURL}/sera-que-seu-ronco-e-sinal-de-apneia-do-sono/`;
+  }
+}, false );
+</script>
+
 <?php get_footer();

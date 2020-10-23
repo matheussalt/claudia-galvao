@@ -84,3 +84,13 @@
     }
   }
 }
+
+@media screen and (min-width: 1050px) {
+  .blog {
+    padding: 128px 0;
+
+    .container > img {
+      height: 360px;
+    }
+  }
+}

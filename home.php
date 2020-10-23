@@ -124,24 +124,20 @@ get_header(); ?>
     <h2>Cirurgias</h2>
 
     <div class="cirurgias-wrapper">
-      <?php
-        $args = array(
-            'post_parent' => 17,
-            'post_type' => 'page',
-            'orderby' => 'menu_order'
-        );
-
-        $child_query = new WP_Query( $args );
-      ?>
-
-      <?php while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
       <a class="cirurgia-item fadeUp" data-animar href="<?=the_permalink()?>">
         <div>
-          <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
-          <h2><?=the_title()?></h2>
+          <img src="<?=get_template_directory_URI()?>/img/src/cirurgias-cirurgias-nasais.png" alt="<?=the_title()?>" />
+          <h2>Cirurgias Nasais</h2>
         </div>
       </a>
-      <?php endwhile; ?>
+
+      <a class="cirurgia-item fadeUp" data-animar href="<?=the_permalink()?>">
+        <div>
+          <img src="<?=get_template_directory_URI()?>/img/src/cirurgias-cirurginea-fariginea.png"
+            alt="<?=the_title()?>" />
+          <h2>Cirurgias Faríngeas</h2>
+        </div>
+      </a>
     </div>
   </div>
 </section>

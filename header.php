@@ -33,6 +33,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="<?=get_template_directory_URI()?>/style.css">
 
+  <script>
+    var baseURL = <?=site_url()?>;
+  </script>
+
   <?php wp_head(); ?>
 
 </head>
