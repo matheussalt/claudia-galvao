@@ -43,7 +43,7 @@ get_header(); ?>
       <p>Você sabia que dormir bem reduz os riscos de desenvolver obesidade, hipertensão arterial e doenças cardíacas?
         Também contribui para uma maior produtividade no trabalho, para a redução dos níveis de estresse no dia a dia e
         oferece um estímulo maior ao raciocínio. Sono é qualidade de vida!</p>
-      <a href="<?=site_url()?>/sobre" class="btn">Saiba mais</a>
+      <a href="<?=site_url()?>/exames" class="btn">Saiba mais</a>
     </div>
   </div>
 </section>
@@ -124,14 +124,14 @@ get_header(); ?>
     <h2>Cirurgias</h2>
 
     <div class="cirurgias-wrapper">
-      <a class="cirurgia-item fadeUp" data-animar href="<?=the_permalink()?>">
+      <a class="cirurgia-item fadeUp" data-animar href="<?=site_url()?>/cirurgias/cirurgias-nasais/">
         <div>
           <img src="<?=get_template_directory_URI()?>/img/src/cirurgias-cirurgias-nasais.png" alt="<?=the_title()?>" />
           <h2>Cirurgias Nasais</h2>
         </div>
       </a>
 
-      <a class="cirurgia-item fadeUp" data-animar href="<?=the_permalink()?>">
+      <a class="cirurgia-item fadeUp" data-animar href="<?=site_url()?>/cirurgias/cirurgias-faringeas/">
         <div>
           <img src="<?=get_template_directory_URI()?>/img/src/cirurgias-cirurginea-fariginea.png"
             alt="<?=the_title()?>" />
