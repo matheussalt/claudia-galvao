@@ -1,3 +1,31 @@
 .quiz {
   padding: 64px 0;
+  background-color: #848587;
+
+  span,
+  div,
+  label {
+    color: #fff;
+  }
+}
+
+.resposta-quiz {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  a {
+    padding: 8px 32px;
+    background-color: $gold;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+  }
 }
