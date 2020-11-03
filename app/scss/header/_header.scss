@@ -4,6 +4,7 @@
   transform: translate3d(0, -50%, 0);
   opacity: 0;
   transition: 1.5s transform, 1.5s opacity;
+  z-index: 999;
 
   &.animar {
     transform: translate3d(0, 0, 0);
