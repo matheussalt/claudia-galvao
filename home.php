@@ -71,7 +71,7 @@ get_header(); ?>
 
     <div class="home-about-txt fadeUp" data-animar>
       <h2>Dra. Cláudia Galvão</h2>
-      <p>Claudia Galvão é doutora pela UFMG e especialista em Medicina do Sono, com certificação pela Academia
+      <p>Cláudia Galvão é doutora pela UFMG e especialista em Medicina do Sono, com certificação pela Academia
         Brasileira de Medicina e pela Associação Brasileira de Medicina do Sono.
         Sua atuação é focada na avaliação de pacientes com transtornos do sono. Realiza a propedêutica e avaliação de
         forma individualizada para indicação do tratamento clínico e cirúrgico dos casos de apneia do sono.</p>

@@ -35,7 +35,7 @@ get_header(); ?>
     <div class="about-txt fadeUp" data-animar>
       <h2>Dra. Cláudia Galvão</h2>
       <h3>Medicina do Sono | Otorrinolaringologia </h3>
-      <p>Claudia Galvão é otorrinolaringologista, formada pela UFMG e especialista em Medicina do Sono, com certificação
+      <p>Cláudia Galvão é otorrinolaringologista, formada pela UFMG e especialista em Medicina do Sono, com certificação
         pela Academia Brasileira de Medicina e pela Associação Brasileira de Medicina do Sono.</p>
 
       <p>Fez residência em otorrinolaringologia no Hospital das Clínicas da UFMG.</p>
@@ -50,13 +50,13 @@ get_header(); ?>
     </div>
 
     <div class="about-txt-yellow fadeUp" data-animar>
-      <p>Dra. Claudia Galvão possui formações complementares, como:</p>
+      <p>Dra. Cláudia Galvão possui formações complementares, como:</p>
 
       <ul>
         <li>> Estágio no serviço de Sleep Medicine e Sleep Surgery na Universidade de Stanford (2018);</li>
         <li>> Curso de Medicina do Sono no Instituto do Sono em São Paulo (2011);</li>
         <li>> Mestrado em cirurgia pela UFMG (concluído em 2010).</li>
-        <li>> Doutorado na Faculdade de Medicina da UFMG em linha de pesquisa do Respirador Oral.</li>
+        <li>> Doutorado na Faculdade de Medicina da UFMG em linha de pesquisa do Respirador Oral. (2013-2017)</li>
       </ul>
 
       <p>Além disso, em 2013 foi a médica responsável pela fundação do Serviço de Medicina do Sono, no Núcleo de
@@ -67,7 +67,7 @@ get_header(); ?>
       <img src="<?=get_template_directory_URI()?>/img/src/dra_claudia2.jpg" alt="Dra. Cláudia Galvão" />
     </div>
 
-    <a href="<?=site_url()?>/blog" class="about-ad fadeUp" data-animar>
+    <a href="<?=site_url()?>/publicacoes-cientificas/" class="about-ad fadeUp" data-animar>
       <h2>Publicações científicas</h2>
       <img src="<?=get_template_directory_URI()?>/img/src/publicacoes.jpg" alt="Publicações Científicas" />
       <p>Conheça quais foram as publicações científicas escritas por Dra. Cláudia Galvão</p>

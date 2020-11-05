@@ -14,9 +14,15 @@
 
 <section class="blog">
   <div class="container">
+    <?php 
+    $category = get_the_category(); 
+    $category_parent_id = $category[0]->category_parent;
+    
+    if ($category_parent_id == 1) { ?>
     <h2>Blog</h2>
 
     <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
+    <?php } ?>
 
     <div class="blog-content">
       <h2 class="blog-title"><?=the_title()?></h2>
@@ -35,7 +41,8 @@
               <img src="<?=get_template_directory_URI()?>/img/src/insta.svg" />
             </a>
 
-            <a href="https://facebook.com/claudiapenagalvao.anjos" target="_blank">
+            <a href="https://www.facebook.com/Cl%C3%ADnica-do-Sono-Cl%C3%A1udia-Galv%C3%A3o-110478064063837"
+              target="_blank">
               <img src="<?=get_template_directory_URI()?>/img/src/face.svg" />
             </a>
           </div>

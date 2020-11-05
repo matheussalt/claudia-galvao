@@ -47,7 +47,7 @@
             <img src="<?=get_template_directory_URI()?>/img/src/insta_white.svg" />
           </a>
 
-          <a href="https://facebook.com/claudiapenagalvao.anjos" target="_blank">
+          <a href="https://www.facebook.com/Cl%C3%ADnica-do-Sono-Cl%C3%A1udia-Galv%C3%A3o-110478064063837" target="_blank">
             <img src="<?=get_template_directory_URI()?>/img/src/face_white.svg" />
           </a>
         </div>
