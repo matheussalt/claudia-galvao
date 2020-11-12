@@ -73,7 +73,8 @@ get_header(); ?>
       <p>Conheça quais foram as publicações científicas escritas por Dra. Cláudia Galvão</p>
     </a>
 
-    <a href="<?=site_url()?>/blog" class="about-ad fadeUp" data-animar>
+    <a href="<?=site_url()?>/adenoamigdalectomia-nao-elimina-problemas-respiratorios-do-sono-em-criancas-com-respiracao-oral/"
+      class="about-ad fadeUp" data-animar>
       <h2>Entrevistas / imprensa</h2>
       <img src="<?=get_template_directory_URI()?>/img/src/entrevistas.jpg" alt="Entrevistas/imprensa" />
       <p>Adenoamigdalectomia não elimina problemas respiratórios do sono em crianças com respiração oral</p>
